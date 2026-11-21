@@ -1,0 +1,5 @@
+*.test
+dist/*
+# Camera credentials
+config.yml
+gateway-reolink

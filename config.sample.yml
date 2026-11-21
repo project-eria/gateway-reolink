@@ -1,0 +1,11 @@
+host: 0.0.0.0 # thing host (default to all IPs)
+port: 8103 # thing port
+location: Europe/Paris
+snapshotRefresh: 10 # seconds between refreshes of the latest image while nobody observes it, 0 = on detections only
+cameras:
+  - ref: garage # URL path of the Thing
+    name: Garage
+    url: https://<camera address> # http:// if enabled on the camera
+    user: <camera user>
+    password: <camera password>
+    onvifPort: 8000 # default

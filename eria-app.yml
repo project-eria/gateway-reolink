@@ -1,0 +1,22 @@
+# ERIA package description (orchestrator catalog, eria-manager DESIGN §12.3)
+name: gateway-reolink
+title: Caméras Reolink
+description: Caméras Reolink (sans NVR) : détections par ONVIF, liste des flux, capture d'image
+kind: gateway
+requires: []
+
+exec:
+  args: ["--config-path", "{config}"]
+  health: { url: "http://127.0.0.1:{port}/eria", grace: 20s, interval: 10s }
+
+config: |
+  host: 0.0.0.0
+  port: 8103
+  location: Europe/Paris
+  snapshotRefresh: 10
+  cameras:
+  - ref: <référence, sert de chemin d'URL>
+    name: <nom>
+    url: https://<adresse de la caméra>
+    user: <utilisateur>
+    password: <mot de passe>
