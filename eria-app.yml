@@ -1,7 +1,7 @@
 # ERIA package description (orchestrator catalog, eria-manager DESIGN §12.3)
 name: gateway-reolink
 title: Caméras Reolink
-description: Caméras Reolink (sans NVR) : détections par ONVIF, liste des flux, capture d'image
+description: "Caméras Reolink (sans NVR) : détections par ONVIF, liste des flux, capture d'image"
 kind: gateway
 requires: []
 
